@@ -37,13 +37,6 @@
 			padding-bottom: 60px;
 		}
 
-		.item h5
-		{
-			font-size: 19px;
-			line-height: 1.375em;
-			font-weight: 400;
-		}
-
 		.carousel-control.right, .carousel-control.left 
   		{
    			background-image: none;
@@ -88,8 +81,154 @@
     		margin: auto;
 		}
 
+		p.carousel-paragraph
+		{
+			font-size: 19px;
+			line-height: 1.375em;
+			font-weight: 400;
+			text-align: left;
+			width: 950px;
+			display: block;
+    		margin: auto;
+    		padding-left: 30px;
+    		padding-right: 30px;
+    		padding-bottom: 20px;
+    		border-left: thick double #7b0182;
+    		border-right: thick double #7b0182;
+		}
+
+		p.carousel-paragraph2
+		{
+			font-size: 17px;
+			line-height: 1.375em;
+			font-weight: 400;
+			text-align: left;
+			width: 950px;
+			display: block;
+    		margin: auto;
+    		padding-left: 30px;
+    		padding-right: 30px;
+    		padding-bottom: 20px;
+    		border-left: thick double #7b0182;
+    		border-right: thick double #7b0182;
+		}
+
+		#alien-button-right
+		{
+			display:block;
+			margin-left:auto;
+			background-color: #f92c7f;
+			color: #ffffff;
+			border-color: black;
+		}
+
+		#alien-button-left
+		{
+			display:block;
+			margin-right:auto;
+			background-color: #f92c7f;
+			color: #ffffff;
+			border-color: black;
+		}
 
   	</style>
+
+  	<script>
+  		$(document).ready(function()
+  		{
+  			//button on the left links to itch.io
+  			$("#alien-button-right").click(function()
+  			{
+  				var win = window.open('https://theboyz.itch.io/alien-invasion', '_blank');
+				if (win) {
+    				//Browser has allowed it to be opened
+    				win.focus();
+				} else {
+    				//Browser has blocked it
+    				alert('Please allow popups for this website');
+				}
+  			});
+
+  			//change button color on mouse enter
+  			$("#alien-button-right").mouseenter(function()
+  			{
+  				$("#alien-button-right").css("background-color", "#bf1c5e");
+  			});
+
+  			//increase size on mouse enter
+  			$("#alien-button-right").mouseenter(function()
+  			{
+  				$("#alien-button-right").animate
+  				({
+  					height: '+=5px',
+  					width: '+=5px'
+  				}, "fast");
+  			});
+
+  			//change color on mouse leave
+  			$("#alien-button-right").mouseleave(function()
+  			{
+  				$("#alien-button-right").css("background-color", "#f92c7f");
+  			});
+
+  			//decrease size on mouse leave
+  			$("#alien-button-right").mouseleave(function()
+  			{
+  				$("#alien-button-right").animate
+  				({
+  					height: '-=5px',
+  					width: '-=5px'
+  				}, "fast");
+  			});
+
+
+  			//button on the right links to github
+  			$("#alien-button-left").click(function()
+  			{
+  				var win = window.open('https://github.com/AustinKellar/TheBoyz', '_blank');
+				if (win) {
+    				//Browser has allowed it to be opened
+    				win.focus();
+				} else {
+    				//Browser has blocked it
+    				alert('Please allow popups for this website');
+				}
+  			});
+
+  			//change button color on mouse enter
+  			$("#alien-button-left").mouseenter(function()
+  			{
+  				$("#alien-button-left").css("background-color", "#bf1c5e");
+  			});
+
+  			//increase size on mouse enter
+  			$("#alien-button-left").mouseenter(function()
+  			{
+  				$("#alien-button-left").animate
+  				({
+  					height: '+=5px',
+  					width: '+=5px'
+  				}, "fast");
+  			});
+
+  			//change color on mouse leave
+  			$("#alien-button-left").mouseleave(function()
+  			{
+  				$("#alien-button-left").css("background-color", "#f92c7f");
+  			});
+
+  			//decrease size on mouse leave
+  			$("#alien-button-left").mouseleave(function()
+  			{
+  				$("#alien-button-left").animate
+  				({
+  					height: '-=5px',
+  					width: '-=5px'
+  				}, "fast");
+  			});
+  		});
+  	</script>
+
 </head>
 <body>
 	<div class = "about-bg">
@@ -119,29 +258,49 @@
       				<div class="item active">
         				<h2>A Quest for Love</h2>
         				<img src = "questknight.png"  class = "carousel-pic "alt = "Knight" width = "600" height = "600"> 
-        				<h5>I made this with my partner Alfredo Cuevas in a class called CMPM 80K: Foundations of Interactive Game Design.</h5>
-        				<h5>In this project, I did most of the core programming while my partner focused more on the art assets and room layouts.</h5>
-        				<h5>A Quest for Love is a game in which the player takes control of a Camelot knight who is transported forward in time to a</h5>
-        				<h5>modern day shopping mall. In the game, the player must explore, converse and fight in order to find Camelot's missing princess.</h5>
-        				<h5>This game is special to me because it was the first game that I ever made. It was all created in GameMaker in the span of one month.</h5>
-        				<h5>Due to the time constraints, some of the code is a little but sloppy, but nevertheless, I am proud of the result.</h5>
+        				<p class = 'carousel-paragraph'>I made this with my partner Alfredo Cuevas in a class called CMPM 80K: Foundations of Interactive Game Design.
+        				   In this project, I did most of the core programming while my partner focused more on the art assets and room layouts.
+        				   A Quest for Love is a game in which the player takes control of a Camelot knight who is transported forward in time to a
+        				   modern day shopping mall. In the game, the player must explore, converse and fight in order to find Camelot's missing princess.
+        				   This game is special to me because it was the first game that I ever made. It was all created in GameMaker in the span of one month.
+        				   Due to the time constraints, some of the code is a little but sloppy, but nevertheless, I am proud of the result.</p>
       				</div>
       				<div class="item">
         				<h2>Alien Invasion</h2>
-        				<img src = "alieninvasion.gif"  class = "carousel-pic "alt = "ALien" width = "720" height = "428.4">
-        				<h5>Alien Invasion was made by a team of 5 students including myself, Alfredo Cuevas, Dustin Halsey, Joshua Clouse and Salvador Galindo. The</h5>
-        				<h5>framework that was used to create this game was a JavaScript library called Phaser. In addition to game programming, this project also</h5>
-        				<h5>helped to get me aquainted with programming for the web. I had to get familiar with localhost servers, objects in JavaScript as well as</h5>
-        				<h5>some HTML. The game was made for a set of classes called CMPM 120 and ARTG 120. CMPM 120 focused on the programming side of the project</h5>
-        				<h5>while ARTG 120 focused on the design aspects. Alien Invasion is a fast-paced top-down shooter which was made as a satire of</h5>
-        				<h5>President Trump's imigration policy. During the construction of this game, I took on the role of lead programmer.</h5>
-        				<h5>Among other things, I built the shooting mechanics, all enemy AI, the pseudo-random enemy spawn system, the random helicopter spawns,</h5>
-        				<h5>all particle systems, the upgrade system, the greencard/score system, the room-barriers, design of levels 2 and 4, text tutorials</h5>
-        				<h5>and some sound design. I am particularly proud of this game because I feel that it is a large step up from A Quest for Love.</h5>
-        				<h5>In addition, I think that I did a great job in a leadership position as the primary programmer.</h5>
+        				<img src = "alieninvasion.gif"  class = "carousel-pic "alt = "ALien" width = "840" height = "499.8">
+        				<p class = 'carousel-paragraph2'>Alien Invasion was made by a team of 5 students including myself, Alfredo Cuevas, Dustin Halsey, Joshua Clouse and Salvador Galindo. The
+        				   framework that was used to create this game was a JavaScript library called Phaser. In addition to game programming, this project also
+        				   helped to get me aquainted with programming for the web. I had to get familiar with localhost servers, objects in JavaScript as well as
+        				   some HTML. The game was made for a set of classes called CMPM 120 and ARTG 120. CMPM 120 focused on the programming side of the project
+        				   while ARTG 120 focused on the design aspects. Alien Invasion is a fast-paced top-down shooter which was made as a satire of
+        				   President Trump's imigration policy. During the construction of this game, I took on the role of lead programmer.
+        				   Among other things, I built the shooting mechanics, all enemy AI, the pseudo-random enemy spawn system, the random helicopter spawns,
+        				   all particle systems, the upgrade system, the greencard/score system, the room-barriers, design of levels 2 and 4, text tutorials
+        				   and some sound design. I am particularly proud of this game because I feel that it is a large step up from A Quest for Love.
+        				   In addition, I think that I did a great job in a leadership position as the primary programmer.</p>
+        				   <div class = "row">
+        				       <div class="col-sm-6" id = 'alien-invasion-play'>
+        				           <button class = "btn btn-default" type = "button" id = "alien-button-right">Play the Game</button> 
+        				       </div>
+        				       <div class="col-sm-6" id = 'alien-invasion-github'>
+        				           <button class = "btn btn-default" type = "button" id = "alien-button-left">View on GitHub</button> 
+        				       </div>
+        				   </div>
       				</div>
       				<div class="item">
-        				<h4>This will be a CS101 PA</h4>
+        				<h2>Java Sparce Matrix ADT</h2>
+        				<img src = "matrix.png"  class = "carousel-pic "alt = "Matrix" width = "738" height = "427">
+        				<p class = 'carousel-paragraph2'>This is a project that I completed in a class called CMPS 101: Algorithms and Abstract Data Types. For this assignment,
+        				   I had to construct a List ADT out of a doubley linked list data structure which stores a list of Entry objects while keeping track of a "cursor". 
+        				   All insertions and deletions from the list are made relative to this "cursor". The Entry objects which make up the contents of the List contain the
+        				   row number, column number and value of each matrix entry. Once the List ADT was fully functioning, I had to make a
+        				   Sparce Matrix ADT out of it. In this class, matrices are constructed out of arrays of List objects, where each List represents one row of the matrix.
+        				   The extra catch which made the project difficult was that all matrices had to be kept <span><i>sparce</i></span> at all times, meaning that any
+        				   zero entries were not to be physically stored in memory, but the Matrix ADT still had to keep track of where those entries were. Once the basics of
+        				   creating this representation of a sparce matrix were under control, I wrote methods to add, subtract, transpose, dot-product, multiply 
+        				   and scalar-multiply the matricies. Finally, once the Matrix class was completed, I had to write a program which constructed matrices based on an input file,
+        				   perform many of the mathematical operations built into the ADT, then print the output to an output file. Projects such as these were fun and helped me to
+        				   better understand object-oriented programming.</p>
       				</div>
     			</div>
 
