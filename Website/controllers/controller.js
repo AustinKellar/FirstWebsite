@@ -5,5 +5,8 @@ app.controller('mainController', ['$scope', '$window', function($scope, $window)
 	};
 	$scope.alienInvasionGithub = function() {
 		$window.open('https://github.com/AustinKellar/TheBoyz');
-	}
+	};
+	$scope.hexGithub = function() {
+		$window.open('https://github.com/AustinKellar/Hex');
+	};
 }]);

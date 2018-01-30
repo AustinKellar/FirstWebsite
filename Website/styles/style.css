@@ -97,9 +97,16 @@ p.carousel-paragraph2 {
 	border-color: black;
 }
 
-#alien-button-left {
+#alien-button-left{
 	display:block;
 	margin-right:auto;
+	background-color: #f92c7f;
+	color: #ffffff;
+	border-color: black;
+}
+
+#red-btn {
+	display: block;
 	background-color: #f92c7f;
 	color: #ffffff;
 	border-color: black;
