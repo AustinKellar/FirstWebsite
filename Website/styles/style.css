@@ -3,6 +3,33 @@
   	color: #ffffff;
 }
 
+.bio {
+	font-size: 17px;
+	line-height: 1.375em;
+	font-weight: 400;
+	text-align: left;
+	width: 950px;
+	display: block;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.coursework {
+	background-color: #cd3edd;
+	color: #ffffff;
+}
+
+.left-list {
+	float: left;
+	padding-left:50px;
+}
+
+.right-list {
+	float: right;
+	padding-right:50px;
+}
+
 .projects-bg {
   	background-color: #e668f9; /* Light Purple */
 	color: #ffffff;
@@ -50,8 +77,8 @@
 }
 
 .carousel-pic {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 10px;
+	padding-bottom: 20px;
 }
 
 img {
@@ -60,21 +87,6 @@ img {
 }
 
 p.carousel-paragraph {
-	font-size: 19px;
-	line-height: 1.375em;
-	font-weight: 400;
-	text-align: left;
-	width: 950px;
-	display: block;
-    margin: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    border-left: thick double #7b0182;
-    border-right: thick double #7b0182;
-}
-
-p.carousel-paragraph2 {
 	font-size: 17px;
 	line-height: 1.375em;
 	font-weight: 400;
@@ -86,7 +98,7 @@ p.carousel-paragraph2 {
     padding-right: 30px;
     padding-bottom: 20px;
     border-left: thick double #7b0182;
- 	border-right: thick double #7b0182;
+    border-right: thick double #7b0182;
 }
 
 #alien-button-right {
@@ -110,4 +122,13 @@ p.carousel-paragraph2 {
 	background-color: #f92c7f;
 	color: #ffffff;
 	border-color: black;
+}
+
+.footer {
+	background-color: #9601ad; /* Purple */
+  	color: #ffffff;
+}
+
+ul#footer li {
+    display:inline;
 }

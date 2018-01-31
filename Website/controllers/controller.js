@@ -9,4 +9,16 @@ app.controller('mainController', ['$scope', '$window', function($scope, $window)
 	$scope.hexGithub = function() {
 		$window.open('https://github.com/AustinKellar/Hex');
 	};
+	$scope.facebook = function() {
+		$window.open('https://www.facebook.com/austin.kellar.39');
+	};
+	$scope.github = function() {
+		$window.open('https://github.com/AustinKellar');
+	};
+	$scope.linkedin = function() {
+		$window.open('https://www.linkedin.com/in/austin-kellar-36abab122/');
+	};
+	$scope.itch = function() {
+		$window.open('https://themightyspidey.itch.io/');
+	};
 }]);

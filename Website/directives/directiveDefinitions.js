@@ -18,3 +18,24 @@ app.directive('hexGame', function() {
         templateUrl: 'views/hexGame.html'
     };
 });
+
+app.directive('bio', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'views/bio.html'
+    };
+});
+
+app.directive('coursework', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'views/coursework.html'
+    };
+});
+
+app.directive('footer', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'views/footer.html'
+    };
+});
