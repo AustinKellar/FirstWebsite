@@ -20,15 +20,6 @@
 	color: #ffffff;
 }
 
-.left-list {
-	float: left;
-	padding-left:50px;
-}
-
-.right-list {
-	float: right;
-	padding-right:50px;
-}
 
 .projects-bg {
   	background-color: #e668f9; /* Light Purple */
@@ -39,7 +30,6 @@
   	padding-top: 40px;
   	padding-bottom: 40px;
 }
-
   		
 
 .item h4 {
